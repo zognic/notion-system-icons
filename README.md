@@ -2,7 +2,7 @@
 
 Index de hotlinks vers des icônes de systèmes (consoles, ordinateurs, arcades) destinés à servir d'icônes externes dans Notion.
 
-Ce repo **ne contient pas d'images** — uniquement un index (`INDEX.md` cliquable, `index.csv` plat) qui pointe vers des images hébergées sur des repos publics tiers via jsDelivr / GitHub raw.
+Ce repo **ne contient pas d'images** — uniquement un index (`INDEX.md` cliquable, `index.csv` plat) qui pointe vers des images hébergées sur des repos publics tiers via GitHub raw (et jsDelivr quand la taille du repo source le permet).
 
 ## Index disponible
 
@@ -18,12 +18,12 @@ Ce repo **ne contient pas d'images** — uniquement un index (`INDEX.md` cliquab
 
 ## Format des URLs
 
-Chaque entrée est disponible en deux URLs :
-
-- **jsDelivr** (recommandé, CDN rapide) : `https://cdn.jsdelivr.net/gh/<user>/<repo>@<branch>/<path>`
 - **GitHub raw** : `https://raw.githubusercontent.com/<user>/<repo>/<branch>/<path>`
+- **jsDelivr** (CDN, plus rapide) : `https://cdn.jsdelivr.net/gh/<user>/<repo>@<branch>/<path>` — **valable seulement si le repo source fait moins de 50 Mo** (limite jsDelivr par package). Pour les packs lourds (4K, vidéos), seul GitHub raw fonctionne.
 
 Pour Notion : Page → Icon → Custom → URL.
+
+> ℹ️ L'index `INDEX.md` (Colorful 4K) utilise uniquement GitHub raw — le repo source pèse ~4 Go et dépasse la limite jsDelivr.
 
 ## Pourquoi un index séparé du repo source
 
